@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://Fish2.png" type="Texture" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fish2" type="Sprite" parent="."]
+position = Vector2( 972, 302 )
+texture = ExtResource( 2 )
+
+[node name="Start" type="Button" parent="."]
+margin_left = 144.0
+margin_top = 161.0
+margin_right = 185.0
+margin_bottom = 181.0
+rect_scale = Vector2( 8.84, 3.7023 )
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 144.0
+margin_top = 350.0
+margin_right = 185.0
+margin_bottom = 370.0
+rect_scale = Vector2( 8.84, 3.7023 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
