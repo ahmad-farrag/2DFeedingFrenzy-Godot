@@ -1,7 +1,9 @@
 extends Control
 
 
-var sea = preload("res://Sea.tscn")
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
 
 
 # Called when the node enters the scene tree for the first time.
@@ -14,10 +16,8 @@ func _ready():
 #	pass
 
 
-func _on_Start_pressed():
-	print("Button Pressed")
+func _on_Play_Again_pressed():
 	get_tree().change_scene("res://Sea.tscn")
-	
 
 
 func _on_Quit_pressed():

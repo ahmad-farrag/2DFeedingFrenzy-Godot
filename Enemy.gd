@@ -11,7 +11,7 @@ extends Sprite
 
 onready var player=get_parent().get_node("Player")
 
-# Called when the node enters the scene tree for the first time.
+# Called when the node enters the scene tree for th""e first time.
 func _ready():
 	pass # Replace with function body.
 
@@ -33,4 +33,4 @@ func _process(delta):
 		
 func die():
 	print("YouLose")
-	get_tree().quit()
+	get_tree().change_scene("res://Control2.tscn")
